@@ -1,0 +1,41 @@
+# Robots.txt pour developpeurfreelanceparis.tech
+# Développeur Freelance Paris - Site Web Professionnel
+# 
+# ✅ MODE PRODUCTION - INDEXATION ACTIVÉE
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /temp/
+
+# Autoriser les ressources importantes pour le rendu
+Allow: /style.css
+Allow: /script.js
+Allow: /assets/
+
+# Sitemaps
+Sitemap: https://developpeurfreelanceparis.tech/sitemap.xml
+
+# Google specific (pas de crawl-delay, Google l'ignore)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.webp$
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Bloque les bots inutiles qui ralentissent le serveur
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

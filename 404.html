@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MRNJ2JQF');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77DFHRXY2R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-77DFHRXY2R');
+    </script>
+    <!-- End Google Analytics -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page non trouvée | DevFreelanceParis</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Redirections automatiques -->
+    <script>
+    (function() {
+        // Liste des redirections (anciennes URLs -> nouvelles URLs)
+        const redirects = {
+            // Pages principales
+            '/accueil': '/index.html',
+            '/home': '/index.html',
+            '/contact': '/index.html#contact',
+            '/services': '/index.html#services',
+            '/portfolio': '/index.html#portfolio',
+            
+            // Services
+            '/creation-site': '/services/creation-site-web.html',
+            '/creation-site-web': '/services/creation-site-web.html',
+            '/web-design': '/services/creation-site-web.html',
+            '/seo': '/services/seo-referencement.html',
+            '/referencement': '/services/seo-referencement.html',
+            '/referencement-naturel': '/services/seo-referencement.html',
+            
+            // Blog
+            '/blog': '/blog/seo-local-paris.html',
+            '/seo-local': '/blog/seo-local-paris.html',
+            '/choisir-developpeur': '/blog/choisir-developpeur-freelance-paris.html',
+            '/guide-freelance': '/blog/choisir-developpeur-freelance-paris.html',
+            '/tendances-web-design': '/blog/tendances-web-design-2026.html',
+            '/tendances-web-design-2025': '/blog/tendances-web-design-2026.html',
+            '/tendances-web-design-2026': '/blog/tendances-web-design-2026.html',
+            '/web-design-2026': '/blog/tendances-web-design-2026.html',
+            
+            // Anciennes URLs potentielles
+            '/developpeur-freelance-paris': '/index.html',
+            '/freelance-paris': '/index.html',
+            '/developpeur-web-paris': '/index.html'
+        };
+        
+        const path = window.location.pathname.toLowerCase().replace(/\/$/, '');
+        
+        // Vérifier si une redirection existe
+        if (redirects[path]) {
+            window.location.replace(redirects[path]);
+        }
+        
+        // Redirection automatique après 10 secondes
+        setTimeout(function() {
+            window.location.href = '/index.html';
+        }, 10000);
+    })();
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRNJ2JQF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="error-page" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px;">
+        <div>
+            <h1 style="font-size: 8rem; margin-bottom: 20px;">404</h1>
+            <h2 style="font-size: 2rem; margin-bottom: 20px;">Page non trouvée</h2>
+            <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px;">Désolé, la page que vous recherchez n'existe pas.</p>
+            <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+        </div>
+    </div>
+</body>
+</html>
